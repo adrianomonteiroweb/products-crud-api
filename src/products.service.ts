@@ -4,9 +4,9 @@ import { Product } from './product.model';
 @Injectable()
 export class ProductsService {
   products: Product[] = [
-    new Product('LIV00001', 'Clean Code', 68.9),
-    new Product('LIV00002', 'Refactore', 55.9),
-    new Product('LIV00003', 'Clean Architecture', 68.9),
+    // new Product('LIV00001', 'Clean Code', 68.9),
+    // new Product('LIV00002', 'Refactore', 55.9),
+    // new Product('LIV00003', 'Clean Architecture', 68.9),
   ];
 
   getAll(): Product[] {
