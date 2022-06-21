@@ -23,13 +23,16 @@ export class ProductsController {
   }
 
   @Get(':id')
-  getOne(@Param() params): string {
-    return `Product ${params.id}`;
+  getOne(@Param() params): Product {
+    console.log(this.products.find((product) => product.id === params.id));
+
+    return this.products.find((product) => product.id === params.id);
   }
 
   @Post()
-  create(@Body() product): object {
-    return product;
+  create(@Body() product: Product) {
+    product.id = this.products.length + 1;
+    this.products.push(product);
   }
 
   @Put()
