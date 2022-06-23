@@ -15,8 +15,8 @@ import { ProductsService } from './products/products.service';
       username: 'adriano',
       password: '12345678',
       database: 'library',
-      autoLoadModels: true, // Reconhecer modelos do projeto
-      synchronize: true, // importa módulo automaticamente
+      autoLoadModels: true, // Reconhecer modelos do projeto automaticamente
+      synchronize: true, // importa módulo automaticamente ao subir a aplicação e sincronizar
     }),
     SequelizeModule.forFeature([Product]), // informa o model
   ],
