@@ -2,9 +2,9 @@ import { Module } from '@nestjs/common';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { Product } from './product.model';
-import { ProductsController } from './products.controller';
-import { ProductsService } from './products.service';
+import { Product } from './products/product.model';
+import { ProductsController } from './products/products.controller';
+import { ProductsService } from './products/products.service';
 
 @Module({
   imports: [
