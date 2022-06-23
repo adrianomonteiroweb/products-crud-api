@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/sequelize';
 import { Product } from './product.model';
 
-@Injectable()
+@Injectable() // injeção de dependência
 export class ProductsService {
   constructor(
     @InjectModel(Product)
